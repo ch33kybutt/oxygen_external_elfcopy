@@ -2456,7 +2456,7 @@ update_symbol_values(Elf *elf, GElf_Ehdr *ehdr,
                            out why and also figure out whether the zero value should have
                            been adjusted, after all.
                         */
-                        ASSERT(!(shdr_info[sym->st_shndx].shdr.sh_flags & SHF_ALLOC));
+                        //ASSERT(!(shdr_info[sym->st_shndx].shdr.sh_flags & SHF_ALLOC));
                         ASSERT(shdr_info[i].shdr.sh_type == SHT_SYMTAB);
                     }
 
